@@ -1,4 +1,4 @@
-
+//initializing variables
 let start = document.getElementById('start');
 let stop = document.getElementById('stop');
 let reset = document.getElementById('reset');
@@ -8,7 +8,7 @@ let second = 0;
 let count = 0;
 let counter = true;
 let startWatch=true;
-
+//click on start button
 start.addEventListener('click', () => {
     counter = true;
     if(startWatch){
@@ -17,12 +17,12 @@ start.addEventListener('click', () => {
     }
    
 });
-
+//click on stop button
 stop.addEventListener('click', () => {
     counter = false;
     startWatch=true;
 });
-
+//click on reset button
 reset.addEventListener('click', () => {
     startWatch=true;
     counter = false;
@@ -36,7 +36,7 @@ reset.addEventListener('click', () => {
 
 
 });
-
+//main functioning of timer
 function stopWatch() {
     if (counter) {
         second++;
